@@ -1,0 +1,80 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* G L O B A L E S */
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4{
+    font-family: 'PT Sans', sans-serif;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+}
+
+/* U T I L I D A D E S */
+.centrar-txt{
+    text-align: center;
+}
+.m-0{
+    margin: 0;
+}
+
+
+/* H E A D E R */
+.site-header{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+}
+.site-header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.site-header h1{
+    text-align: center;
+    font-weight: 400;
+}
+.site-header h1 span{
+    font-weight: 700;
+}
+/* N A V  */
+.navegacion a{
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+}
+/* T X T  H E A D E R */
+.txt-header{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5rem;   
+}
+.txt-header p{
+    font-size: 2.2rem;
+}

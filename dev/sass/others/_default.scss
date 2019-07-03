@@ -1,0 +1,151 @@
+@import "variables";
+%extende_bxsz_inh{
+    box-sizing: inherit;
+}
+%pt-fam{
+    font-family: $pt;
+}
+%open-fam{
+    font-family: $open;
+}
+%btn{
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem 3rem;
+    color: $primary-color;
+    text-decoration: none;
+    font-family: $pt;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: none;
+    flex: 0 0 100%;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*{
+    @extend %extende_bxsz_inh;
+    &:before{
+        @extend %extende_bxsz_inh;
+    }
+    &:after{
+        @extend %extende_bxsz_inh;
+    }
+}
+
+body{
+    @extend %open-fam;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+h1{
+    @extend %pt-fam;
+    font-size: 4.8rem;
+}
+
+h2{
+    @extend %pt-fam;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h3{
+    @extend %pt-fam;
+    font-size: 3.2rem;
+}
+h4{
+    @extend %pt-fam;
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+// U T I L I T I E S
+
+.centrar-txt{
+    text-align: center;
+}
+.m-0{
+    margin: 0;
+}
+.btn-primary{
+    background: $second-color;
+    @extend %btn;
+}
+.btn-secundary{
+    background: $fourth-color;
+    @extend %btn;
+}
+/* N A V  */
+.navegacion{
+    a{
+        text-align: center;
+        display: block;
+        font-size: 1.8rem;
+        color: $primary-color;
+    }
+}
+.curso{
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+
+    &:last-of-type{
+        border-bottom: none;
+    }
+
+    p{
+        font-family: 'PT Sans',sans-serif;
+        font-weight: 700;
+
+        span{
+            font-weight: 400;
+        }
+    }
+}
+.description{
+    font-weight: 400!important;
+}
+@media (min-width:768px) {
+    .navegacion {
+        a{
+            display: inline;
+            margin-right: 2rem;
+            &:last-of-type{
+                margin-right: 0px;
+            }
+        }
+    }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    %btn{
+        display: inline-block;
+        margin:2rem 0;
+        flex: 0 0 auto;
+    }
+    .curso {
+        padding: 3rem;
+    }
+}

@@ -1,0 +1,25 @@
+@media(min-width: 768px){
+    .grid{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .col-4{
+            flex: 0 0 calc(33.3% - 1rem); 
+        }
+        .col-6{
+            flex: 0 0 calc(50% - 1rem); 
+        }
+        .col-8{
+            flex: 0 0 calc(66.6% - 1rem); 
+        }
+        .col-10{
+            flex: 0 0 calc(83.3% - 1rem);
+        }
+        .col-12{
+            flex: 0 0 100%; 
+        }
+    }
+    .col-cntr{
+        justify-content: center;
+    }
+}

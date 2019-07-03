@@ -1,0 +1,17 @@
+@import "variables";
+
+.site-footer{
+    background: $second-color;
+    padding: 3rem;
+    margin-top: 4rem;
+    p{
+        color: $primary-color;
+        font-size: 4rem;
+        font-weight: 400;
+        font-family: $pt;
+        text-align: center;
+        span{
+            font-weight: 700;
+        }
+    }
+}
